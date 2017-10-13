@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add a Dive</title>
+</head>
+<body>
+  <center><h3>Dive Entry Form </h3></center>
+
+  <form action="addDive.php" method="post">
+    Dive Date(Format year month day):
+    <input type="date" name="date" required><br>
+    Dive Time(Format ):
+    <input type="time" name="time" maxlength="6" required><br>
+    Dive Location:
+    <input type="text" name="location" maxlength="40"  required><br>
+    Dive Site:
+    <input type="text" name="site" maxlength="40" required><br><br>
+    Type of Water:<br>
+    <input type="radio" name="water" value="fresh" required>Fresh Water<br>
+    <input type="radio" name="water" value="salt" required>Salt Water</br><br>
+    Type of Entry:<br>
+    <input type="radio" name="entry" value="boat" required>Boat Dive<br>
+    <input type="radio" name="entry" value="shore" required>Shore Dive</br><br>
+    Type of Dive:<br>
+    <input type="radio" name="type" value="class" required>For a Class<br>
+    <input type="radio" name="type" value="fun" required>For Fun</br><br>
+    EAN:
+    <input type="number" name="gas" min="21" max="40" value="21" required><br>
+    Weight:
+    <input type="number" name="weight" min="0" max="40" value="0" required><br>
+    Exposure Protection:
+    <select name="exp" required>
+      <option value="none">None</option>
+      <option value="1mm">1mm</option>
+      <option value="2mm">2mm</option>
+      <option value="3mm">3mm</option>
+      <option value="4mm">4mm</option>
+      <option value="5mm">5mm</option>
+      <option value="6mm">6mm</option>
+      <option value="7mm">7mm</option>
+      <option value="Drysuit">Drysuit</option>
+    </select><br>
+    Tank Size:
+    <select name="size" required>
+      <option value="60">60</option>
+      <option value="80">80</option>
+      <option value="100">100</option>
+      <option value="110">110</option>
+    </select><br>
+    Tank Type:
+    <select name="tank" required>
+      <option value="AL">AL</option>
+      <option value="Steel">Steel</option>
+    </select><br>
+    Starting PSI:
+    <input type="number" name="psiS" step="100" min="0" max="3000" value="3000" required><br>
+    Ending PSI:
+    <input type="number" name="psiE" step="100" min="0" max="3000" value="0" required><br>
+    Bottom Time(total number of minutes ex. 60 for 1 hour):
+    <input type="number" name="dive_time" min="1" max="120" value="45" required><br>
+    Max Depth(in feet):
+    <input type="number" name="depth" min="5" max="130" value="5" required><br>
+    Water Temperature(just the number):
+    <input type="number" name="temp" min="0" max="100" value="70" required><br>
+    Buddy:
+    <input type="text" name="buddy" maxlength="50" required><br>
+    Surface Interval(total number in minutes ex 60 for 1 hour):
+    <input type="text" name="si" maxlength="4" size="5" required><br>
+    Add your dive notes below(250 character max)</br>
+    <textarea name="notes" rows="4" cols="50" maxlength="250" required></textarea><br>
+    <input type="submit" value="Submit Information">
+  </form>
+  <br>
+
+  <p>
+    By clicking the Submit Information button you will send the information that you supplied to
+    addDive.php for processing and then submissing into the divelog table.
+  </p>
+</body>
+</html>

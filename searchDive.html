@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center><h3>Select how you would like to search</h3></center>
+
+<form action="searchDive.php" method="post">
+  <input type="radio" name="field" value="id" checked>Dive Number<br>
+  <input type="radio" name="field" value="dive_date">Dive Date<br>
+  <input type="radio" name="field" value="dive_time">Dive Time<br>
+  <input type="radio" name="field" value="dive_location">Dive Location<br>
+  <input type="radio" name="field" value="dive_site">Dive Site<br>
+  <input type="radio" name="field" value="water">Water<br>
+  <input type="radio" name="field" value="entry_type">Entry Type<br>
+  <input type="radio" name="field" value="dive_type">Dive Type<br>
+  <input type="radio" name="field" value="ean">EAN<br>
+  <input type="radio" name="field" value="weight">weight<br>
+  <input type="radio" name="field" value="exp_pro">Exposure Protection<br>
+  <input type="radio" name="field" value="tank_size">Tank Size<br>
+  <input type="radio" name="field" value="tank_type" checked>Tank Type<br>
+  <input type="radio" name="field" value="starting_psi">Starting PSI<br>
+  <input type="radio" name="field" value="ending_psi">Ending PSI<br>
+  <input type="radio" name="field" value="bottom_time">Bottom Time<br>
+  <input type="radio" name="field" value="max_depth">Max Depth<br>
+  <input type="radio" name="field" value="water_temp">Water Temperature<br>
+  <input type="radio" name="field" value="buddy">Buddy<br>
+  <input type="radio" name="field" value="si">Surface Interval<br>
+<center><h3>Search For:</h3></center>
+  <input type="text" name="term"><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
