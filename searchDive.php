@@ -28,8 +28,8 @@
 $searchBy = $_POST['field'];
 $searchFor = $_POST['term'];
 
-$database = 'ds6225';
-$db = mysqli_connect('', 'ds6225', 'emE0J3B5', $database);
+$database = 'username';
+$db = mysqli_connect('', 'username', 'password', $database);
 
 $record = "SELECT * FROM divelog WHERE $searchBy LIKE '%".$searchFor."%'";
 $result = mysqli_query($db, $record);
