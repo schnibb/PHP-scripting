@@ -1,7 +1,7 @@
 <html>
 <?php
-$database = 'ds6225';
-$db = mysqli_connect('', 'ds6225', 'emE0J3B5', $database);
+$database = 'username';
+$db = mysqli_connect('', 'username', 'password', $database);
 
 
 $id= $_GET["id"];
