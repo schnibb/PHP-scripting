@@ -29,8 +29,8 @@
     '$type','$gas','$weight','$exp','$size','$tank','$psiS','$psiE','$dive_time','$depth','$temp','$buddy',
     '$si','$notes')";
 
-    $db = mysql_connect('', 'ds6225', 'emE0J3B5');
-    mysql_select_db('ds6225', $db);
+    $db = mysql_connect('', 'username', 'password');
+    mysql_select_db('username', $db);
 
     mysql_query($record);
 
